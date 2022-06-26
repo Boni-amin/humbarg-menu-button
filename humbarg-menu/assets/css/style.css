@@ -1,0 +1,192 @@
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Poppins 400';
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-style: normal;
+	background: tomato;
+}
+/*
+===========================
+Basic Setup
+===========================
+*/
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a,
+span,
+label {
+	display: inline-block;
+}
+ul li {
+	list-style: none;
+}
+
+a,
+a:focus {
+	text-decoration: none;
+}
+
+button,
+input,
+textarea,
+button:focus,
+input:focus,
+textarea:focus {
+	border: 0;
+	/* outline: 0; */
+	background-color: transparent;
+}
+
+button {
+	cursor: pointer;
+}
+
+/*
+==================================
+Font Size
+==================================
+*/
+.font-size-16 {
+	font-size: 16px;
+}
+.font-size-50 {
+	font-size: 50px;
+}
+.font-size-18 {
+	font-size: 18px;
+}
+.font-size-20 {
+	font-size: 20px;
+}
+.font-size-32 {
+	font-size: 32px;
+}
+.font-size-20 {
+	font-size: 20px;
+}
+.font-size-40 {
+	font-size: 40px;
+}
+
+/*
+==================================
+Font Color
+==================================
+*/
+.text-color-ff {
+	color: #FFFFFF;
+}
+.text-color-3c {
+	color: #3c3768;
+}
+.text-color-45 {
+	color: #455a64;
+}
+.text-color-78 {
+	color: #78909c;
+}
+.text-color-fa {
+	color: #fa7875;
+}
+.text-color-c5 {
+	color: #c5cae9;
+}
+
+/*
+==================================
+Background Color
+==================================
+*/
+.bg-color-ff {
+	background: #FFF;
+}
+
+/*
+==================================
+Reuseable component
+==================================
+*/
+.line-height-18{
+	line-height: 1.8;
+}
+.line-height-16{
+	line-height: 1.6;
+}
+.transition-linear {
+	transition: all .4s linear;
+}
+.transition-esae {
+	transition: all .4s ease;
+}
+
+/*
+==================================
+Header Area Start
+==================================
+*/
+
+
+.header-nav{
+	width: 80%;
+	margin: 100px auto 0 auto;
+}
+
+
+.menu-toggle {
+	width: 40px;
+	height: 30px;
+	cursor: pointer;
+  }
+  .menu-toggle.on .one {
+	-moz-transform: rotate(45deg) translate(7px, 7px);
+	-ms-transform: rotate(45deg) translate(7px, 7px);
+	-webkit-transform: rotate(45deg) translate(7px, 7px);
+	transform: rotate(45deg) translate(7px, 7px);
+  }
+  .menu-toggle.on .two {
+	opacity: 0;
+  }
+  .menu-toggle.on .three {
+	-moz-transform: rotate(-45deg) translate(8px, -10px);
+	-ms-transform: rotate(-45deg) translate(8px, -10px);
+	-webkit-transform: rotate(-45deg) translate(8px, -10px);
+	transform: rotate(-45deg) translate(8px, -10px);
+  }
+  
+  .one,
+  .two,
+  .three {
+	width: 100%;
+	height: 5px;
+	background: white;
+	margin: 6px auto;
+	backface-visibility: hidden;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+  }
+  .two{
+	width: 70%;
+	margin: 0;
+  }
+  
+  
